@@ -15,7 +15,10 @@ export function Timer({
     const isFinished = timeLeft === 0;
 
     return (
-        <div className="relative flex flex-col items-center justify-center p-8 bg-zinc-900 border border-zinc-800 rounded-2xl shadow-2xl overflow-hidden w-full max-w-2xl">
+        <div className={clsx(
+            "relative flex flex-col items-center justify-center p-8 bg-zinc-900 border rounded-2xl overflow-hidden w-full max-w-2xl transition-all duration-500",
+            isFinished ? "animate-timer-finished" : "border-zinc-800 shadow-2xl"
+        )}>
 
             {/* Decorative Grid Background Elements */}
             <div className="absolute inset-0 opacity-10 pointer-events-none" style={{

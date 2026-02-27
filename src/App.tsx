@@ -23,8 +23,8 @@ function App() {
     <main className="min-h-screen w-full bg-bg-core flex items-center justify-center relative overflow-hidden font-rajdhani">
 
       {/* Background Ambience */}
-      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary-accent/5 rounded-full blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-zinc-800/20 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary-accent/5 rounded-full blur-[150px] pointer-events-none animate-float-slow"></div>
+      <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-zinc-800/20 rounded-full blur-[120px] pointer-events-none animate-float-fast"></div>
 
       <div className="container mx-auto px-4 flex flex-col items-center justify-center z-10">
 
