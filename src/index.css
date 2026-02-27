@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Teko:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-accent: #facc15;
+  --color-primary-hover: #eab308;
+  --color-bg-core: #09090b;
+  --color-zinc-900: #18181b;
+  --color-zinc-800: #27272a;
+  --color-text-primary: #f3f4f6;
+  --color-text-secondary: #71717a;
+  
+  --color-status-success: #10b981;
+  --color-status-alert: #f59e0b;
+  --color-status-error: #ef4444;
+
+  --font-teko: "Teko", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-core text-text-primary font-rajdhani;
+  }
+}
